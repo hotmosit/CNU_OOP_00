@@ -16,8 +16,7 @@ public:
 	 return temp;
  }
  int operator++(){ //prefix operation
-	 this->number += 1;
-	 return this->number;
+	 return this->number += 1;
  }
 
  friend std::ostream& operator<<(std::ostream&, MyData &);
